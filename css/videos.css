@@ -1,0 +1,21 @@
+/* CSS Document */
+/* design: Jean van Kasteel */
+
+/*
+color codes:
+- orange: #f05023 // light orange: #f37653
+- white: #fff
+- black: #000
+- blue: #143d8d // light blue: #a1b1d1
+*/
+.video {
+    width: 800px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.synopsis {
+    margin: 0 auto;
+    text-align: justify;
+    padding: 20px 0px;
+}
