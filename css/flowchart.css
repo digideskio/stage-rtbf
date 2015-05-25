@@ -1,0 +1,162 @@
+/* CSS Document */
+/* design: Jean van Kasteel */
+
+/*
+color codes:
+- orange: #f05023 // light orange: #f37653
+- white: #fff
+- black: #000
+- blue: #143d8d // light blue: #a1b1d1
+*/
+
+/* CSS3 tree (credits: http://thecodeplayer.com/walkthrough/css3-family-tree) */
+.tree * {margin: 0; padding: 0;}
+.tree ul {
+	padding-top: 15px; position: relative;
+	
+	-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+.tree li {
+	float: left; text-align: center;
+	list-style-type: none;
+	position: relative;
+	padding: 15px 25px 0 25px;
+	
+	-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+/*We will use ::before and ::after to draw the connectors*/
+
+.tree li::before, .tree li::after{
+	content: '';
+	position: absolute; top: 0; right: 50%;
+	border-top: 1px solid #a1b1d1;
+	width: 50%; height: 15px;
+}
+.tree li::after{
+	right: auto; left: 50%;
+	border-left: 1px solid #a1b1d1;
+}
+
+/*We need to remove left-right connectors from elements without 
+any siblings*/
+.tree li:only-child::after, .tree li:only-child::before {
+	display: none;
+}
+
+/*Remove space from the top of single children*/
+.tree li:only-child{ padding-top: 0;}
+
+/*Remove left connector from first child and 
+right connector from last child*/
+.tree li:first-child::before, .tree li:last-child::after{
+	border: 0 none;
+}
+/*Adding back the vertical connector to the last nodes*/
+.tree li:last-child::before{
+	border-right: 1px solid #a1b1d1;
+	border-radius: 0 5px 0 0;
+	-webkit-border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0;
+}
+.tree li:first-child::after{
+	border-radius: 5px 0 0 0;
+	-webkit-border-radius: 5px 0 0 0;
+	-moz-border-radius: 5px 0 0 0;
+}
+
+/*Time to add downward connectors from parents*/
+.tree ul ul::before{
+	content: '';
+	position: absolute; top: 0; left: 50%;
+	border-left: 1px solid #a1b1d1;
+	width: 0; height: 15px;
+}
+
+.tree li a, .bli_charleroi{
+	border: 1px solid #143d8d;
+	padding: 8px 15px;
+	text-decoration: none;
+	color: #000;
+	display: inline-block;
+	
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	
+	-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+/*Time for some hover effects*/
+/*We will apply the hover effect the the lineage of the element also*/
+.tree li a:hover, .tree li a:hover+ul li a, .bli_charleroi:hover {
+	background: rgba(243,118,83,.7); color: #000; border: 1px solid #f05023;
+}
+/*Connector styles on hover*/
+.tree li a:hover+ul li::after, 
+.tree li a:hover+ul li::before, 
+.tree li a:hover+ul::before, 
+.tree li a:hover+ul ul::before{
+	border-color:  #f05023;
+}
+.bli_charleroi {
+	padding: 20px 180px;
+    margin-top: 8px;
+    margin-left: 120px;
+    background: #e8e8e8;
+    text-align: center;
+}
+
+.flow_wrap {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.hierarchy_info, .hierarchy_viva {
+    position: absolute;
+    padding: 15px;
+    background: #143d8d;
+    color: #fff;
+    text-transform: capitalize;
+    border-radius: 5px;
+    display: none;
+}
+.hierarchy_info {
+    margin-top: -190px;
+    margin-left: -140px;
+    opacity: .6;
+}
+.hierarchy_viva {
+    margin-top: -35px;
+    margin-left: 150px;
+    opacity: .6;
+}
+
+.info:hover .hierarchy_info {
+    display: block;
+}
+.viva:hover .hierarchy_viva {
+    display: block;
+}
+
+.text {
+	width: 900px;
+	margin: 0 auto;
+	text-align: justify;
+}
+
+
+.text li {
+    list-style: none;
+    float: left;
+    padding: 5px 20px;
+    margin-left: 10px;
+    border: 1px solid #000;
+}

@@ -1,0 +1,139 @@
+/* CSS Document */
+/* design: Jean van Kasteel */
+
+/*
+color codes:
+- orange: #f05023 // light orange: #f37653
+- white: #fff
+- black: #000
+- blue: #143d8d // light blue: #a1b1d1
+*/
+
+
+#card {
+    width: 360px;
+    height: 200px;
+    background: rgba(255,255,255,.9);;
+    border-radius: 20px;
+    border: 15px solid transparent;
+    position: relative;
+    right: 15px;
+    float: right;
+    top: 15px;
+    box-shadow: 0px 0px 8px;
+}
+
+#card_photo {
+    margin-right: 20px;
+    width: 118px;
+    height: 128px;
+    float: left;
+    background-image: url(../img/photos/jean_van_kasteel.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid #143d8d;
+}
+
+#card_info {
+    width: 180px;
+    height: 130px;
+    float:left;
+    padding-left: 40px;
+}
+
+#card_intern {
+    width: 360px;
+    height: 50px;
+    float: left;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 2px solid #143d8d;
+}
+
+#card .field_name,
+#card .field_entry {
+    margin: 0;
+    padding: 0;
+}
+
+#card #card_info .field_name {
+    font-size: .7em;
+    color: #555;
+}
+
+#card #card_info .field_entry {
+    font-size: .85em;
+    font-weight: bold;
+    padding-bottom: 2px;
+    padding-left: 10px;
+}
+
+#card #card_intern .field_name {
+    float: left;
+    padding-right: 20px;
+    padding-left: 70px;
+    width: 70px;
+    font-size: .85em;
+}
+
+#card #card_intern .field_entry {
+    width: 360px;
+    font-size: .85em;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.prez {
+    width: 804px;
+    color: #fff;
+    position: relative;
+    padding: 20px 20px;
+    font-size: 19px;
+    text-align: center;
+    bottom: -40px;
+    float: right;
+    text-shadow:0 0 3px #000;
+    background: rgba(0,0,0,.5);
+}
+
+.prez_small {
+    font-size: .8em;
+}
+
+.welcome {
+    width: 844px;
+    height: 427px;
+    margin: 100px auto;
+    background: url(../img/photos/studio_vivacite.jpg);
+    border: 1px solid #000;
+}
+
+#curvedarrow {
+	position: absolute;
+	margin-left: 560px;
+    margin-top: 10px;
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-right: 50px solid #143d8d;
+	-webkit-transform: rotate(-130deg);
+	-moz-transform: rotate(-130deg);
+	-ms-transform: rotate(-130deg);
+	-o-transform: rotate(-130deg);
+}
+
+#curvedarrow:after {
+	content: "";
+	position: absolute;
+	border: 0 solid transparent;
+	border-top: 18px solid #143d8d;
+	border-radius: 120px 0 0 0;
+	top: -58px;
+	left: -35px;
+	width: 52px;
+	height: 52px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+}

@@ -1,0 +1,112 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>L'entreprise | Rapport de stage</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+
+
+<link href="../css/interview.css" rel="stylesheet" type="text/css">
+<!-- InstanceEndEditable -->
+<link rel="icon" href="../img/logos/favicon.ico" />
+<link href="../css/main.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<div id="container">
+    <section id="top-bar">
+
+        <a href="../index.html" id="title">
+            <img alt="Logo de Vivacité" src="../img/logos/logo_viva.png" id="logo">
+            <span class="stage">Rapport de stage</span>
+        </a>
+
+		<div id="main-menu">
+        	<div class="menuitem">
+                La RTBF
+                <div class="dropdown">
+                    <a href="interview.html"><div class="dropdown-item">L'entreprise</div></a>
+                    <a href="flowchart.html"><div class="dropdown-item">L'organigramme</div></a>
+                    <a href="competition.html"><div class="dropdown-item">La concurrence</div></a>
+                    <a href="videos.html"><div class="dropdown-item">En vidéo</div></a>
+                </div>
+            </div>
+
+        	<div class="menuitem">
+                Le stage
+                <div class="dropdown">
+                    <a href="internship.html"><div class="dropdown-item">Activités</div></a>
+                    <a href="productions.html"><div class="dropdown-item">Productions</div></a>
+                    <a href="tools.html"><div class="dropdown-item">Outils utilisés</div></a>
+                </div>
+            </div>
+
+        	<div class="menuitem">
+                À propos
+                <div class="dropdown">
+                    <a href="about.html"><div class="dropdown-item">L'étudiant</div></a>
+                    <a href="credits.html"><div class="dropdown-item">Le site</div></a>
+                    <a href="links.html"><div class="dropdown-item">Liens utiles</div></a>
+                </div>
+            </div>
+        </div>
+        <img alt="Ombre portée" id="top-bar-shadow" src="../img/logos/headershadow.png">
+    </section>
+    
+    <section id="content"><!-- InstanceBeginEditable name="contenu" -->
+<div class="text"><br><br><br><img alt="Logo RTBF" class="rtbf" src="../img/logos/logo_rtbf.png">
+<p>La RTBF est une entreprise publique à caractère autonome.<br><br>Financée par le gouvernement de la Communauté Française, sous contrat de gestion, et par les revenus publicitaires via une cellule dédiée, l'entreprise existe depuis 1930 et compte aujourd'hui plus de 2.000 collaborateurs.<br><br>
+
+RTBF est l'acronyme de <u>R</u>adio-<u>T</u>élévision <u>b</u>elge de la Communauté <u>f</u>rançaise.<br><br><br>
+
+Écoutez <b>l'interview</b> d'Alain Vaessen, journaliste radio&nbsp;:<br><br></p></div>
+
+
+<div id="fakeplayer">
+<ul>
+    <li><a href="#" onclick="setTime(0)"><div class="play_button"></div>0:00 - La RTBF, service public.</a></li>
+    <li><a href="#" onclick="setTime(106)"><div class="play_button"></div>1:46 - Les chaînes de la RTBF.</a></li>
+    <li><a href="#" onclick="setTime(175)"><div class="play_button"></div>2:55 - L'information sur Vivacité.</a></li>
+    <li><a href="#" onclick="setTime(257)"><div class="play_button"></div>4:17 - La journée-type d'un journaliste.</a></li>
+    <li><a href="#" onclick="setTime(406)"><div class="play_button"></div>6:46 - Le contact permanent avec le public.</a></li>
+    <li><a href="#" onclick="setTime(452)"><div class="play_button"></div>7:32 - Traiter l'information.</a></li>
+</ul>
+<script>
+function setTime(secs) {
+    var audio = document.getElementById("player");
+    audio.currentTime = secs;
+    audio.play();
+}
+</script>
+ <audio id="player" controls>
+  <source src="../audio/interviews/interview_alain_vaessen.mp3" type="audio/mpeg">
+  Ce navigateur ne supporte pas l'HTML 5.0
+</audio>
+</div>
+<!-- InstanceEndEditable -->
+    </section>
+    
+    <section id="bottom-bar">
+        <a href="http://www.condorcet.be/" target="_blank">
+        <div class="bottom-item">Haute École Condorcet</div>
+        </a>
+
+        <a href="http://www.rtbf.be/info/" target="_blank">
+            <div class="bottom-item">RTBF.be</div>
+        </a>
+
+        <a href="http://www.rtbf.be/lapremiere/" target="_blank">
+            <div class="bottom-item">La Première</div>
+        </a>
+
+        <a href="http://www.rtbf.be/vivacite/" target="_blank">
+            <div class="bottom-item">Vivacité</div>
+        </a>
+    </section>
+</div>
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,31 @@
+/* CSS Document */
+/* design: Jean van Kasteel */
+
+/*
+color codes:
+- orange: #f05023 // light orange: #f37653
+- white: #fff
+- black: #000
+- blue: #143d8d // light blue: #a1b1d1
+*/
+
+table {
+    text-align: justify;
+    color: #555;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+table .title {
+    text-align: right;
+    color: #222;
+    font-weight: bold;
+}
+table tr {
+    height: 80px;
+}
+table a {
+    color: #444;
+    text-decoration: none;
+    font-style: italic;
+    border-bottom: 1px solid #f37653;
+}
